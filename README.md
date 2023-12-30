@@ -2,6 +2,6 @@
 Final project in NCU CSIE Compiler, 2023 Fall.
 
 ## Description Documents
-* link:./Compiler%20Final%20Project.pdf[Compiler Final Project Requirements]
-* link:./MiniLisp.pdf[Mini-LISP]
+* [Compiler Final Project](./Compiler%20Final%20Project.pdf)
+* [Mini-LISP](./Compiler%20Final%20Project.pdf)
 
