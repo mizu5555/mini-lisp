@@ -32,6 +32,7 @@ Final project in NCU CSIE Compiler, 2023 Fall.
 
 ## 4.Usage
 * [run_final.sh](./run_final.sh)
+Run this file to compile lex, yacc.
 ```bash
 bison -d -o final.tab.c final.y
 gcc -c -g -I. final.tab.c
@@ -39,9 +40,8 @@ lex -o lex.yy.c final.l
 gcc -c -g -I. lex.yy.c
 gcc -o final final.tab.o lex.yy.o -ll
 ```
-  Run this file to compile lex, yacc.
 * [run_test.py](./run_test.py)
-  Use this file to run the asset test.
+Use this file to run the asset test.
 
 ## 5. 
 
