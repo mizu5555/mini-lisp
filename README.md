@@ -10,7 +10,7 @@ Final project in NCU CSIE Compiler, 2023 Fall.
 * Language: C++14, Lex, Yacc (Bison)
 
 ## 3.Features
-### (1)Basic Feature
+### (1) Basic Feature
 | Feature              | Description                                       | Points | Pass |
 |----------------------|---------------------------------------------------|--------|------|
 | Syntax Validation    | Print “syntax error” when parsing invalid syntax  | 10     | ✔️   |
@@ -22,11 +22,26 @@ Final project in NCU CSIE Compiler, 2023 Fall.
 | Function             | Able to declare and call an anonymous function    | 8      |     |
 | Named Function       | Able to declare and call a named function         | 6      |     |
 
-### (2)Bonus featires
+### (2) Bonus featires
 | Feature              | Description                                       | Points | Pass |
 |----------------------|---------------------------------------------------|--------|------|
 | Recursion            | Support recursive function call                   | 5      |      |
 | Type Checking        | Print error messages for type errors              | 5      |      |
 | Nested Function      | Nested function                                   | 5      |      |
 | First-class Function | Able to pass functions, support closure           | 5      |      |
+
+## 4.Usage
+* [run_final](./run_final.sh)
+----
+bison -d -o final.tab.c final.y
+gcc -c -g -I. final.tab.c
+lex -o lex.yy.c final.l
+gcc -c -g -I. lex.yy.c
+gcc -o final final.tab.o lex.yy.o -ll 
+----
+  Run this file to compile lex, yacc.
+* [run_test](./run_test.py)
+  Use this file to run the asset test.
+
+
 
