@@ -39,6 +39,6 @@ lex -o lex.yy.c final.l
 gcc -c -g -I. lex.yy.c
 gcc -o final final.tab.o lex.yy.o -ll
 ```
-* [run_test.py](./run_test.py) ->Use this file to run the asset test.
+* [run_test.py](./run_test.py) -> Use this file to run the asset test.
 
 
